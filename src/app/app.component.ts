@@ -13,6 +13,8 @@ export class AppComponent {
   isFederalCredit: boolean = true;
   isNVRebate: boolean = false;
   setter: number = 350;
+  desiredKcms: number = 700;
+  basePrice: number = 2.5;
   bankLoan: BankLoan[] = [
     {
       loanType: 'SF 6059',
@@ -118,5 +120,9 @@ export class AppComponent {
     } else {
       return netSystemPrice;
     }
+  }
+
+  calculateWishedPpw(audit: number, dealerFee: number) {
+    return ((this.desiredKcms / 1000) + this.basePrice + (audit / (this.kWhSize * 1000))) / (1 - dealerFee);
   }
 }
