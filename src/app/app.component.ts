@@ -38,6 +38,29 @@ export class AppComponent {
       roofCost: 0,
       leadSetter: 0,
       wishedPpw: 0
+    },
+    {
+      loanType: 'SUNF 2039',
+      payment: 0,
+      cms: 0,
+      perKw: 0,
+      dealerFeePercent: 16.50 / 100,
+      interest: 3.99 / 100,
+      term: 240,
+      kWhSize: 9.365,
+      ppw: 4.80,
+      base: 2.50,
+      priceBeforeRoof: 0,
+      netSystemPrice: 0,
+      FederalTaxCredit: 0,
+      nvRebate: 0,
+      totalAfterCredits: 0,
+      dealerFee: 0,
+      dealerCost: 792,
+      audit: 0,
+      roofCost: 0,
+      leadSetter: 0,
+      wishedPpw: 0
     }
   ];
 
