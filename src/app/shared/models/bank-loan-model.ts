@@ -11,7 +11,7 @@ export interface BankLoan {
   base: number;
   priceBeforeRoof: number;
   netSystemPrice: number;
-  FederalTaxCredit: number;
+  federalTaxCredit: number;
   nvRebate: number;
   totalAfterCredits: number;
   dealerFee: number;
