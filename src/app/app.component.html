@@ -1,5 +1,51 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <div>
+    <label class="med-description">
+      Override KW Size
+    </label>
+    <input style="margin: 0 3px" type="checkbox" [(ngModel)]="isOverridekWhSizeActive" (ngModelChange)="onisOverridekWhSizeActiveChange($event)"
+      name="optiona" id="cc" />
+  </div>
+
+  <input dataType="numeric" style="width: 40px" type="text" [(ngModel)]="kWhSize" (ngModelChange)="onkWhSizeChange($event)">
+
+  <div style="display: inline-flex">
+    <div>
+      <label class="med-description">
+        Override Base Price?
+      </label>
+      <input style="margin: 0 3px" type="checkbox" [(ngModel)]="isOverrideBasePriceActive" (ngModelChange)="onisOverrideBasePriceActiveChange($event)"
+        name="optiona" id="cc" />
+    </div>
+
+    <input dataType="numeric" style="width: 40px" type="text" [(ngModel)]="basePrice" (ngModelChange)="onBasePriceChange($event)">
+
+    <div>
+      <label class="med-description">
+        Is Lead Setter
+      </label>
+      <input style="margin: 0 3px" type="checkbox" [(ngModel)]="isLeadSetter" (ngModelChange)="onIsLeadSetterChange($event)"
+        name="optiona" id="cc" />
+    </div>
+
+    <div>
+      <label class="med-description">
+        Is Federal Credit
+      </label>
+      <input style="margin: 0 3px" type="checkbox" [(ngModel)]="isFederalCredit" (ngModelChange)="onIsFederalCreditChange($event)"
+        name="optiona" id="cc" />
+    </div>
+    <div>
+      <label class="med-description">
+        Is NV Rebate
+      </label>
+      <input style="margin: 0 3px" type="checkbox" [(ngModel)]="isNVRebate" (ngModelChange)="onIsNvRebateChange($event)"
+        name="optiona" id="cc" />
+    </div>
+  </div>
+
+
 
   <table>
     <thead>
